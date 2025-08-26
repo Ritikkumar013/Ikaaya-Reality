@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: feSpotLight) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* splashScreen.css */
+
+/* Keyframes for fade-in effect from left to right with a smooth, blended mask */
+@keyframes fadeInLeftToRight {
+  0% {
+    clip-path: inset(0 100% 0 0); /* Clip everything on the right side */
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Fully reveal the logo */
+    mask-image: none; /* Remove the mask, fully reveal the logo */
+    -webkit-mask-image: none; /* For Safari */
+  }
+}
+
+/* Apply the animation to the splash screen content */
+.animate-fade-in-left {
+  animation: fadeInLeftToRight 3s ease-out forwards; /* 4s duration with easing */
+  /* -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); For Safari */
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);  
+}
+
+@font-face {
+  font-family: 'casagrande-deco-bold';
+  src: url('/fonts/casagrande-deco-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Slider */
+
+.swiper.swiper-initialized.swiper-horizontal.overflow-hidden.swiper-backface-hidden {
+  position: static !important;
+}
+
+.swiper-button-next {
+  color: black!important;
+}
+
+.swiper-button-prev {
+  color: black!important;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom:-40px!important;
+}
+
+.swiper-pagination-bullet-active {
+  
+  background: #B79868!important;
+}
+
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  @apply bg-gray-100; /* Background color */
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  @apply bg-[#36454f] rounded-lg hover:bg-[#2a353d] transition-all;
+}
+
+/* Scrollbar Corner */
+::-webkit-scrollbar-corner {
+  @apply bg-gray-200;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
