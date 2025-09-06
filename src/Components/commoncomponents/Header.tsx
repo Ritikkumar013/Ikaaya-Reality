@@ -178,7 +178,7 @@ const Header = () => {
       className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${isScrolled ? "bg-white shadow-md py-3" : "bg-transparent py-5"} flex items-center justify-between px-7`}
     >
       <Link href="/">
-        <Image className="lg:w-30 md:w-24 w-20" src={isScrolled ? "/ikaaya/beige.png" : "/ikaaya/beige.png"} width={512} height={512} alt="Logo" />
+        <Image className="lg:w-30 md:w-24 w-20" src={isScrolled ? "/ikaaya/Beige.png" : "/ikaaya/Beige.png"} width={512} height={512} alt="Logo" />
       </Link>
 
       <nav className={`hidden lg:flex justify-center gap-7 ${isScrolled ? "text-black" : "text-white"}`}>
