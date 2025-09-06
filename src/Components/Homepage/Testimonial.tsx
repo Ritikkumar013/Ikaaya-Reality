@@ -228,23 +228,23 @@ export default function TestimonialCarousel() {
     );
   };
 
-  const goToTestimonial = (index : any) => {
+  const goToTestimonial = (index : number) => {
     if (index <= testimonials.length - 3) {
       setCurrentIndex(index);
     }
   };
 
   // Get visible testimonials (3 at a time)
-  const getVisibleTestimonials = () => {
-    const visible = [];
-    for (let i = 0; i < 3; i++) {
-      const index = (currentIndex + i) % testimonials.length;
-      visible.push(testimonials[index]);
-    }
-    return visible;
-  };
+  // const getVisibleTestimonials = () => {
+  //   const visible = [];
+  //   for (let i = 0; i < 3; i++) {
+  //     const index = (currentIndex + i) % testimonials.length;
+  //     visible.push(testimonials[index]);
+  //   }
+  //   return visible;
+  // };
 
-  const visibleTestimonials = getVisibleTestimonials();
+  // const visibleTestimonials = getVisibleTestimonials();
 
   return (
     <div className="bg-gray-50 py-16 relative">
@@ -282,7 +282,7 @@ export default function TestimonialCarousel() {
               className="flex transition-transform duration-500 ease-in-out gap-6"
               style={{ transform: `translateX(-${currentIndex * (100/3)}%)` }}
             >
-              {testimonials.map((testimonial, index) => (
+              {testimonials.map((testimonial) => (
                 <div 
                   key={testimonial.id} 
                   className="w-1/3 flex-shrink-0"
@@ -299,7 +299,7 @@ export default function TestimonialCarousel() {
                     
                     {/* Quote */}
                     <blockquote className="text-gray-700 text-sm leading-relaxed mb-6 text-center min-h-20">
-                      "{testimonial.text}"
+                      {testimonial.text}
                     </blockquote>
                     
                     {/* Client Info */}

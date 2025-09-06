@@ -984,7 +984,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { ChevronLeft, ChevronRight, ChevronDown, Filter, X } from 'lucide-react';
-
+import Image from 'next/image';
 interface PropertyData {
   id: number;
   title: string;
@@ -1099,7 +1099,7 @@ const ApartmentCard = ({ property, number, isReversed = false }: ApartmentCardPr
     <div className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} rounded-lg md:py-16 md:border-0 border md:border-b md:rounded-none`}>
       <div className={`w-full md:w-1/2 relative ${!isReversed ? 'md:border-r md:pr-12' : 'md:border-l md:pl-12'} md:border-gray-200`}>
         <div className="relative bg-gray-200 aspect-video md:aspect-[4/3] w-full rounded-lg overflow-hidden group">
-          <img 
+          <Image 
             src={property.image} 
             alt={property.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

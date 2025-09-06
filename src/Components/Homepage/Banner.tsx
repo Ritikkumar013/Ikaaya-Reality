@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Search, ChevronDown, MapPin, Home, Building2, TreePine, Briefcase, ShoppingBag } from 'lucide-react';
 
 const BannerWithSearch = () => {
-  const [activeTab, setActiveTab] = useState('buy');
+  const [activeTab] = useState('buy');
   const [selectedPropertyType, setSelectedPropertyType] = useState('All');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');

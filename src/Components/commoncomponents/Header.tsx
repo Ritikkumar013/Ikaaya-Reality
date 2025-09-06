@@ -202,7 +202,7 @@ const Header = () => {
           
         </DropdownMenu>
         </Link>
-        <Link href="/conatct" className="cursor-pointer py-4">Contact Us</Link>
+        <Link href="/contact" className="cursor-pointer py-4">Contact Us</Link>
        
       </nav>
 
