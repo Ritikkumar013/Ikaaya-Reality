@@ -6,34 +6,14 @@ import Link from "next/link";
 import Location from "../Components/Location";
 import Cards from "../Components/Homepage/Cards";
 import Testimonial from "../Components/Homepage/Testimonial";
+import Banner from "../Components/Homepage/Banner";
 
 const Home = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       {/* Section 1 */}
-      <div
-        className=" w-full lg:h-screen h-[70vh] bg-cover bg-center"
-        style={{ backgroundImage: "url('/ikaaya/banner.png')" }}
-      >
-        <div className=" text-white flex flex-col items-center justify-center h-full gap-5">
-          <h1 className="lg:text-8xl md:text-6xl text-4xl font-bold font-heading ">
-            Ikaaya Realty
-          </h1>
-          <p className="font-serif text-center">
-            INTRODUCING NEW WAYS TO SHOWCASE PROPERTIES{" "}
-          </p>
 
-          <div className="lg:bottom-6 absolute bottom-[210px]">
-            <Image
-              src="/arrow-btn-vertical.png"
-              width={70}
-              height={200}
-              alt="Picture of the author"
-              className="w-10"
-            />
-          </div>
-        </div>
-      </div>
+      <Banner />
 
       {/* Section 2 */}
 
@@ -61,7 +41,8 @@ const Home = () => {
               beyond individual projects. As a key facilitator of multiple real
               estate developments, Ikaaya Realty requires a strong, future-ready
               identity that reflects credibility, vision, and enduring trust
-              <br /><br />
+              <br />
+              <br />
               The goal was to develop a logo system that is scalable across
               sub-brands, clean and minimal in design, and professional in
               appearance. It is crafted to effectively serve both corporate and
@@ -78,18 +59,17 @@ const Home = () => {
         </div>
       </div>
 
-
-<Cards />
+      <Cards />
 
       {/* Section 3 */}
 
-      <div
+      {/* <div
         className="w-full lg:p-20 md:p-10 p-7"
         style={{ backgroundImage: "url('/bg-grain-black.jpg')" }}
-      >
-        <div className="max-w-screen-xl mx-auto">
-          <IconCards />
-        </div>
+      ></div> */}
+
+      <div className="">
+        <IconCards />
       </div>
 
       {/* Section 6 */}
@@ -139,12 +119,9 @@ const Home = () => {
         </div>
       </div> */}
 
-{/* Testimonial */}
+      {/* Testimonial */}
 
-<Testimonial />
-
-      
-
+      <Testimonial />
 
       {/* Floor Layouts Section 7 */}
       {/* <div className="bg-[#282828] w-full p-20">
@@ -239,7 +216,7 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-    </>
+    </div>
   );
 };
 

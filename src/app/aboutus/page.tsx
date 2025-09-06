@@ -2,6 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
+import Clubhouse from "../../Components/Clubhouse";
 
 const AboutPage = () => {
   const [selected] = useState(null);
@@ -176,10 +177,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className="basis-1/2">
-              {/* <img
-                src="./Images/8.jpg"
-                className="w-full md:max-w-[500px] ml-auto rounded-lg"
-              /> */}
+              
               <Image
                 src="/home-2nd-sec.jpg"
                 width={500}
@@ -191,210 +189,8 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* Section 6 */}
-      {/* <div className="py-14 bg-white">
-        <div className="max-w-screen-xl container mx-auto px-5 md:px-10 text-center">
-          <h2 className="text-3xl text-[#0D0D0D] pb-3 text-center font-heading">
-            Our Top Reads
-          </h2>
-          <p className="text-xs text-[#626262] max-w-[400px] mx-auto text-center mb-10 lg:mb-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been
-          </p>
-          <div className="flex flex-col md:flex-row gap-8 md:gap-5 mb-4 text-left">
-            <div className="basis-1/3 border bg-gray-100 rounded-lg">
-              
-              <Image
-                src="/home-2nd-sec.jpg"
-                width={500}
-                height={500}
-                alt="Picture of the author"
-              />
-              <div className="p-3 flex flex-col gap-2 pb-4">
-                <h5 className="text-lg">Who&apos;s driving Bajrang Motors</h5>
-                <p className="text-sm mb-2 text-gray-600">
-                  We`&apos;re building a culture within Bajrang Motor that
-                  emphasizes doing the right thing, period, for riders, drivers,
-                  and employees. Find out more about the team that’s leading the
-                  way.
-                </p>
-                <p className="text-xs">
-                  <a
-                    className="underline-offset-2 underline text-black font-bold"
-                    href="#"
-                  >
-                    See our leadership
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className="basis-1/3 border bg-gray-100 rounded-lg">
-              
-              <Image
-                src="/home-2nd-sec.jpg"
-                width={500}
-                height={500}
-                alt="Picture of the author"
-              />
-              <div className="p-3 flex flex-col gap-2 pb-4">
-                <h5 className="text-lg">Who&apos;s driving Bajrang Motors</h5>
-                <p className="text-sm mb-2 text-gray-600">
-                  We`&apos;re building a culture within Bajrang Motor that
-                  emphasizes doing the right thing, period, for riders, drivers,
-                  and employees. Find out more about the team that’s leading the
-                  way.
-                </p>
-                <p className="text-xs">
-                  <a
-                    className="underline-offset-2 underline text-black font-bold"
-                    href="#"
-                  >
-                    See our leadership
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className="basis-1/3 border bg-gray-100 rounded-lg">
-              
-              <Image
-                src="/home-2nd-sec.jpg"
-                width={500}
-                height={500}
-                alt="Picture of the author"
-              />
-              <div className="p-3 flex flex-col gap-2 pb-4">
-                <h5 className="text-lg">Who&apos;s driving Bajrang Motors</h5>
-                <p className="text-sm mb-2 text-gray-600">
-                  We`&apos;re building a culture within Bajrang Motor that
-                  emphasizes doing the right thing, period, for riders, drivers,
-                  and employees. Find out more about the team that’s leading the
-                  way.
-                </p>
-                <p className="text-xs">
-                  <a
-                    className="underline-offset-2 underline text-black font-bold"
-                    href="#"
-                  >
-                    See our leadership
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <button className="bg-[#0D0D0D] text-[#FFFFFF] text-[13px] rounded-[25px] py-[12px] px-5 my-5 mx-auto">
-            Read All!
-          </button>
-        </div>
-      </div> */}
-
-      {/* Section 7 */}
-      {/* <div>
-        <div className='container-md' style={{ padding: '80px 0px' }}>
-          <div className='row justify-content-around'>
-            <div className='col-5'>
-              <h3 className='fw-medium fs-2 mb-3'>Make your brand go where people go</h3>
-              <p className='fs-6 '>Bajrang Motor is committing to becoming a fully electric, zero-emission platform by 2040, with 100% of rides taking place in zero-emission vehicles, on public transit, or with micromobility. It is our responsibility as the largest mobility platform in the world to more aggressively tackle the challenge of climate change. We will do this by offering riders more ways to ride green, helping drivers go electric, making transparency a priority and partnering with NGOs and the private sector to help expedite a clean and just energy transition.</p>
-              <p className='fs-6'><a class="link-offset-3 text-black" href="#">Learn More</a></p>
-            </div>
-            <div className='col-5'>
-              <img src="../car.jpg" className="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* Section 8 */}
-      {/* <div className="py-14 bg-[#1A1919]">
-        <div className="max-w-screen-xl container mx-auto px-5  md:px-10">
-          <h2 className="text-3xl text-white pb-3 text-center">Company Info</h2>
-          <p className="text-xs text-[#626262] max-w-[500px] mx-auto text-center mb-12 lg:mb-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been ways to ride green, helping drivers
-            go electric, making transparency a priority
-          </p>
-          <div className="flex flex-col md:flex-row gap-10 md:gap-5 text-white pt-20">
-            <div className="basis-1/3">
-              
-              <Image
-                src="/globe.svg"
-                width={500}
-                height={500}
-                alt="Picture of the author"
-                className="w-9 mb-3"
-              />
-              <h5 className="text-xl mb-2">Newsroom</h5>
-              <p className="text-sm mb-3 text-[#626262]">
-                Get announcements about partnerships, app updates, initiatives,
-                and more near you and around the world.
-              </p>
-              <a
-                className="text-sm text-white underline underline-offset-2"
-                href="#"
-              >
-                Go to Newsroom
-              </a>
-            </div>
-            <div className="basis-1/3">
-              
-              <Image
-                src="/window.svg"
-                width={500}
-                height={500}
-                alt="Picture of the author"
-                className="w-9 mb-3"
-              />
-              <h5 className="text-xl mb-2">Blog</h5>
-              <p className="text-sm mb-3 text-[#626262]">
-                Get announcements about partnerships, app updates, initiatives,
-                and more near you and around the world.
-              </p>
-              <a
-                className="text-sm text-white underline underline-offset-2"
-                href="#"
-              >
-                Read our Posts
-              </a>
-            </div>
-            <div className="basis-1/3">
-              <Image
-                src="/file.svg"
-                width={500}
-                height={500}
-                alt="Picture of the author"
-                className="w-9 mb-3"
-              />
-              <h5 className="text-xl mb-2">Investor Relations</h5>
-              <p className="text-sm mb-3 text-[#626262]">
-                Download financial reports, see next-quarter plans, and read
-                about our corporate responsibility initiatives.
-              </p>
-              <a
-                className="text-sm text-white underline underline-offset-2"
-                href="#"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* Section 9 */}
-      {/* <div>
-        <div className='container-fluid' style={{ background: '#f6f6f6' }}>
-          <div className='container-md' style={{ padding: '80px 0px' }}>
-            <div className='row justify-content-around'>
-              <div className='col-5' style={{ paddingTop: '80px' }}>
-                <h1 className='fw-medium fs-1 mb-3 text-black'>Come reimagine<br />with us</h1>
-                <button type="button" class="btn btn-dark rounded-pill px-5 py-2">Know More!</button>
-              </div>
-              <div className='col-5'>
-                <img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_698,h_465/v1555543261/assets/cb/bed1c3-cb3e-4a20-9790-df8c8a2951fc/original/globe_background-01.svg" className="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+<Clubhouse />
+           
     </>
   );
 };

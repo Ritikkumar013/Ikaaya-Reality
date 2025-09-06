@@ -67,7 +67,7 @@ const Footer = () => {
                   className="w-[18px]"
                 />
                 <Link href="mailto:info@oceantechies.com">
-                  <p className="">info@ikaayareality.com</p>
+                  <p className="">info@ikaayarealty.com</p>
                 </Link>
               </div>
               <div className="flex gap-2 mb-3 items-center">
@@ -152,7 +152,7 @@ const Footer = () => {
             <p>
               Copyright ©{" "}
               <span className="text-[#B79868]">Crobstacle Ventures LLP</span>{" "}
-              2024</p>
+              2025</p>
           </div>
           <div className="basis-1/3">
               <div className="flex gap-5 justify-end">
